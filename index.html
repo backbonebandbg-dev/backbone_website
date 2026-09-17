@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BACKBONE — Thrash / Heavy Metal</title>
+<meta name="description" content="BACKBONE — thrash / heavy metal band from Bulgaria. Bookings and events.">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a class="nav__logo" href="index.html" aria-label="BACKBONE home">
+    <img src="assets/img/logo-mark.png" alt="BACKBONE">
+  </a>
+  <div class="nav__links">
+    <a href="#about"><span data-lang-bg>За нас</span><span data-lang-en>About</span></a>
+    <a href="#members"><span data-lang-bg>Състав</span><span data-lang-en>Members</span></a>
+    <a href="#story"><span data-lang-bg>История</span><span data-lang-en>Story</span></a>
+    <a href="events.html"><span data-lang-bg>Събития</span><span data-lang-en>Events</span></a>
+    <a href="#contact"><span data-lang-bg>Контакти</span><span data-lang-en>Contact</span></a>
+    <div class="lang" role="group" aria-label="Language">
+      <button data-set-lang="bg">BG</button>
+      <button data-set-lang="en">EN</button>
+    </div>
+  </div>
+  <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero__bg"></div>
+  <div class="hero__inner">
+    <img class="hero__logo" src="assets/img/logo-white-centered.png" alt="BACKBONE">
+    <p class="hero__tag">
+      <span data-lang-bg>Thrash <b>/</b> Heavy Metal <b>—</b> България</span>
+      <span data-lang-en>Thrash <b>/</b> Heavy Metal <b>—</b> Bulgaria</span>
+    </p>
+    <div class="hero__cta">
+      <a class="btn btn--blood" href="#contact"><span data-lang-bg>Свържи се за събитие</span><span data-lang-en>Book us</span></a>
+      <a class="btn" href="events.html"><span data-lang-bg>Минали събития</span><span data-lang-en>Past shows</span></a>
+    </div>
+  </div>
+  <div class="hero__scroll"><span data-lang-bg>Надолу</span><span data-lang-en>Scroll</span></div>
+</header>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="wrap about">
+    <div class="about__body" data-reveal>
+      <span class="eyebrow" data-lang-bg>За групата</span>
+      <span class="eyebrow" data-lang-en>The band</span>
+      <h2 style="font-size:clamp(1.8rem,5vw,3rem);margin:0.8rem 0 1.5rem;">BACKBONE</h2>
+      <div data-lang-bg>
+        <p><strong>Backbone</strong> е thrash / heavy metal група от България. Започнахме през лятото на <strong>2024 г.</strong> като трибют на Motörhead — силен, суров и без компромиси.</p>
+        <p>През <strong>2025 г.</strong> добавихме класики от Metallica, Pantera и AC/DC, обиколихме сцени в цялата страна и постепенно тръгнахме в своя собствена посока.</p>
+        <p>Днес пишем собствени песни, <strong>ускоряваме темпото</strong> и се насочваме изцяло към нашето звучене.</p>
+      </div>
+      <div data-lang-en>
+        <p><strong>Backbone</strong> is a thrash / heavy metal band from Bulgaria. We started in the <strong>summer of 2024</strong> as a Motörhead tribute — loud, raw and uncompromising.</p>
+        <p>Through <strong>2025</strong> we added classics from Metallica, Pantera and AC/DC, played stages across the country, and slowly began moving in our own direction.</p>
+        <p>Today we write our own songs, <strong>push the tempo faster</strong>, and head fully toward our own sound.</p>
+      </div>
+    </div>
+    <div class="about__photo" data-reveal>
+      <img src="assets/img/band-dark.jpg" alt="BACKBONE" data-en="BACKBONE band" data-bg="Групата BACKBONE">
+    </div>
+  </div>
+</section>
+
+<!-- MEMBERS -->
+<section class="section" id="members">
+  <div class="wrap">
+    <div class="section__head" data-reveal>
+      <span class="eyebrow" data-lang-bg>Съставът</span>
+      <span class="eyebrow" data-lang-en>The lineup</span>
+      <h2><span data-lang-bg>Членове</span><span data-lang-en>Members</span></h2>
+    </div>
+    <div class="members" data-reveal>
+      <div class="member">
+        <span class="member__role"><span data-lang-bg>Соло китара</span><span data-lang-en>Lead guitar</span></span>
+        <h3 class="member__name">Martin Simeonov</h3>
+        <p class="member__inst"><span data-lang-bg>Соло китара, беквокали</span><span data-lang-en>Lead guitar, backing vocals</span></p>
+        <span class="member__founder"><span data-lang-bg>Съосновател</span><span data-lang-en>Co-founder</span></span>
+      </div>
+      <div class="member">
+        <span class="member__role"><span data-lang-bg>Вокали</span><span data-lang-en>Vocals</span></span>
+        <h3 class="member__name">Ivo Ignatov</h3>
+        <p class="member__inst"><span data-lang-bg>Вокали, ритъм китара</span><span data-lang-en>Vocals, rhythm guitar</span></p>
+        <span class="member__founder"><span data-lang-bg>Съосновател</span><span data-lang-en>Co-founder</span></span>
+      </div>
+      <div class="member">
+        <span class="member__role"><span data-lang-bg>Ударни</span><span data-lang-en>Drums</span></span>
+        <h3 class="member__name">Kamen Milkov</h3>
+        <p class="member__inst"><span data-lang-bg>Ударни, беквокали</span><span data-lang-en>Drums, backing vocals</span></p>
+      </div>
+      <div class="member">
+        <span class="member__role"><span data-lang-bg>Бас</span><span data-lang-en>Bass</span></span>
+        <h3 class="member__name">Ilian Senovski</h3>
+        <p class="member__inst"><span data-lang-bg>Бас китара</span><span data-lang-en>Bass guitar</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STORY / MILESTONES -->
+<section class="section section--alt" id="story">
+  <div class="wrap">
+    <div class="section__head" data-reveal>
+      <span class="eyebrow" data-lang-bg>Пътят дотук</span>
+      <span class="eyebrow" data-lang-en>The road so far</span>
+      <h2><span data-lang-bg>История</span><span data-lang-en>Story</span></h2>
+    </div>
+    <div class="miles" data-reveal>
+      <div class="mile">
+        <span class="mile__year">2024</span>
+        <span class="mile__t"><span data-lang-bg>Началото</span><span data-lang-en>The start</span></span>
+        <p data-lang-bg>Сформираме се през лятото като трибют на Motörhead.</p>
+        <p data-lang-en>Formed in the summer as a Motörhead tribute.</p>
+      </div>
+      <div class="mile">
+        <span class="mile__year">2025</span>
+        <span class="mile__t"><span data-lang-bg>Класиките</span><span data-lang-en>The classics</span></span>
+        <p data-lang-bg>Добавяме Metallica, Pantera и AC/DC. Свирим из цялата страна.</p>
+        <p data-lang-en>Added Metallica, Pantera and AC/DC. Played all over the country.</p>
+      </div>
+      <div class="mile">
+        <span class="mile__year">2025</span>
+        <span class="mile__t"><span data-lang-bg>Wolf Hunt Fest</span><span data-lang-en>Wolf Hunt Fest</span></span>
+        <p data-lang-bg>Второ място и награда — дебютирахме първите си две песни.</p>
+        <p data-lang-en>2nd place and an award — debuting our first two songs.</p>
+      </div>
+      <div class="mile">
+        <span class="mile__year">2026</span>
+        <span class="mile__t"><span data-lang-bg>Собствен път</span><span data-lang-en>Our own path</span></span>
+        <p data-lang-bg>Насочваме се към собствени песни и по-бързо темпо.</p>
+        <p data-lang-en>Moving toward our own songs and a faster tempo.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:3.5rem" data-reveal>
+      <span class="eyebrow" style="display:block;margin-bottom:1.2rem" data-lang-bg>Чуй ни</span>
+      <span class="eyebrow" style="display:block;margin-bottom:1.2rem" data-lang-en>Listen</span>
+      <div class="tracks">
+        <div class="track" data-src="assets/audio/second-chance.mp3">
+          <button class="track__play" aria-label="Play Second Chance">
+            <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+          </button>
+          <div class="track__meta">
+            <span class="track__num">01</span>
+            <div class="track__name">Second Chance<span class="track__tag" data-lang-bg>демо</span><span class="track__tag" data-lang-en>demo</span></div>
+            <div class="track__bar"><div class="track__fill"></div></div>
+          </div>
+          <div class="track__time">0:00 / 0:00</div>
+        </div>
+        <div class="track" data-src="assets/audio/in-control.mp3">
+          <button class="track__play" aria-label="Play In Control">
+            <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+          </button>
+          <div class="track__meta">
+            <span class="track__num">02</span>
+            <div class="track__name">In Control<span class="track__tag" data-lang-bg>демо</span><span class="track__tag" data-lang-en>demo</span></div>
+            <div class="track__bar"><div class="track__fill"></div></div>
+          </div>
+          <div class="track__time">0:00 / 0:00</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="wrap contact">
+    <div class="contact__lead" data-reveal>
+      <span class="eyebrow" data-lang-bg>Контакти</span>
+      <span class="eyebrow" data-lang-en>Contact</span>
+      <h2 style="font-size:clamp(1.8rem,5vw,3.2rem);margin-top:0.8rem"><span data-lang-bg>Наеми ни за събитие</span><span data-lang-en>Book us for a show</span></h2>
+      <p data-lang-bg>Фестивали, клубове, частни събития — пишете ни за дати и условия.</p>
+      <p data-lang-en>Festivals, clubs, private events — reach out for dates and details.</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/profile.php?id=61567194346154" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/backbone__band" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="contact__list" data-reveal>
+      <a class="contact__row" href="mailto:backbone.band.bg@gmail.com">
+        <span class="k">Email</span>
+        <span class="v">backbone.band.bg@gmail.com</span>
+      </a>
+      <a class="contact__row" href="tel:+359893777583">
+        <span class="k"><span data-lang-bg>Телефон</span><span data-lang-en>Phone</span></span>
+        <span class="v">+359 893 777 583</span>
+      </a>
+      <div class="contact__row">
+        <span class="k"><span data-lang-bg>База</span><span data-lang-en>Based in</span></span>
+        <span class="v"><span data-lang-bg>София, България</span><span data-lang-en>Sofia, Bulgaria</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <img src="assets/img/logo-mark.png" alt="BACKBONE">
+  <p>© <span id="yr"></span> BACKBONE — <span data-lang-bg>Всички права запазени.</span><span data-lang-en>All rights reserved.</span></p>
+</footer>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

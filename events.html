@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BACKBONE — <span>Events</span></title>
+<meta name="description" content="Past shows and galleries — BACKBONE thrash / heavy metal.">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a class="nav__logo" href="index.html" aria-label="BACKBONE home">
+    <img src="assets/img/logo-mark.png" alt="BACKBONE">
+  </a>
+  <div class="nav__links">
+    <a href="index.html#about"><span data-lang-bg>За нас</span><span data-lang-en>About</span></a>
+    <a href="index.html#story"><span data-lang-bg>История</span><span data-lang-en>Story</span></a>
+    <a href="events.html" aria-current="page"><span data-lang-bg>Събития</span><span data-lang-en>Events</span></a>
+    <a href="index.html#contact"><span data-lang-bg>Контакти</span><span data-lang-en>Contact</span></a>
+    <div class="lang" role="group" aria-label="Language">
+      <button data-set-lang="bg">BG</button>
+      <button data-set-lang="en">EN</button>
+    </div>
+  </div>
+  <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- PAGE HERO -->
+<header class="page-hero">
+  <span class="eyebrow" data-lang-bg>Архив</span>
+  <span class="eyebrow" data-lang-en>Archive</span>
+  <h1><span data-lang-bg>Минали събития</span><span data-lang-en>Past events</span></h1>
+  <p data-lang-bg>Снимки и видео от сцените, на които сме свирили.</p>
+  <p data-lang-en>Photos and video from the stages we've played.</p>
+</header>
+
+<!-- EVENTS LIST -->
+<main class="events">
+  <div class="wrap">
+
+    <!-- ============================================================
+         EVENT ENTRY — copy a whole <article> block to add a show.
+         Newest event goes at the TOP.
+         To add photos: drop files in assets/img/events/ and put a
+         <div class="gallery"> with .gallery__item blocks inside the
+         article (see the Челопеч / Wolf Hunt entry below as a model),
+         replacing the "coming soon" note.
+         ============================================================ -->
+    <article class="event" data-reveal>
+      <div class="event__head">
+        <h2 class="event__title"><span data-lang-bg>Челопеч<span class="event__sub"> · Wolf Hunt</span></span><span data-lang-en>Chelopech<span class="event__sub"> · Wolf Hunt</span></span></h2>
+        <div class="event__meta">
+          <span class="event__date">11.10.2025</span>
+          <span class="event__place"><span data-lang-bg>България</span><span data-lang-en>Bulgaria</span></span>
+        </div>
+      </div>
+      <p class="event__desc" data-lang-bg>Завършихме 2025 г. на Wolf Hunt, където спечелихме второ място и награда — дебютирайки първите си две собствени песни, „Second Chance“ и „In Control“.</p>
+      <p class="event__desc" data-lang-en>We closed out 2025 at Wolf Hunt, taking 2nd place and an award — debuting our first two original songs, "Second Chance" and "In Control".</p>
+
+      <div class="gallery">
+        <div class="gallery__item" data-full="assets/img/events/chelopech-2025-10-00.jpg">
+          <img src="assets/img/events/chelopech-2025-10-00-thumb.jpg" alt="Wolf Hunt — резултати / results" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/chelopech-2025-10-01.jpg">
+          <img src="assets/img/events/chelopech-2025-10-01-thumb.jpg" alt="BACKBONE — Wolf Hunt, Челопеч" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/chelopech-2025-10-02.jpg">
+          <img src="assets/img/events/chelopech-2025-10-02-thumb.jpg" alt="BACKBONE — Wolf Hunt, Челопеч" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/chelopech-2025-10-03.jpg">
+          <img src="assets/img/events/chelopech-2025-10-03-thumb.jpg" alt="BACKBONE — Wolf Hunt, Челопеч" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/chelopech-2025-10-04.jpg">
+          <img src="assets/img/events/chelopech-2025-10-04-thumb.jpg" alt="BACKBONE — Wolf Hunt, Челопеч" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/chelopech-2025-10-05.jpg">
+          <img src="assets/img/events/chelopech-2025-10-05-thumb.jpg" alt="BACKBONE — награда, Wolf Hunt" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/chelopech-2025-10-06.jpg">
+          <img src="assets/img/events/chelopech-2025-10-06-thumb.jpg" alt="BACKBONE — Wolf Hunt, Челопеч" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/chelopech-2025-10-07.jpg">
+          <img src="assets/img/events/chelopech-2025-10-07-thumb.jpg" alt="BACKBONE — Wolf Hunt, Челопеч" loading="lazy">
+        </div>
+      </div>
+
+      <p class="event__link">
+        <a href="https://rockthenight.eu/death-row-backbone-i-phantom-sa-nai-dobrite-balgarski-grupi-na-wolf-hunt/" target="_blank" rel="noopener">
+          <span data-lang-bg>Прочети в Rock the Night →</span><span data-lang-en>Read on Rock the Night →</span>
+        </a>
+      </p>
+    </article>
+
+    <article class="event" data-reveal>
+      <div class="event__head">
+        <h2 class="event__title"><span data-lang-bg>Севлиево<span class="event__sub"> · Hotalich Rock Fest</span></span><span data-lang-en>Sevlievo<span class="event__sub"> · Hotalich Rock Fest</span></span></h2>
+        <div class="event__meta">
+          <span class="event__date">30.08.2025</span>
+          <span class="event__place"><span data-lang-bg>България</span><span data-lang-en>Bulgaria</span></span>
+        </div>
+      </div>
+      <p class="event__desc" data-lang-bg>Hotalich Rock Fest в Севлиево — сред имена като Odd Crew, Renegat и B.T.R.</p>
+      <p class="event__desc" data-lang-en>Hotalich Rock Fest in Sevlievo — sharing the bill with names like Odd Crew, Renegat and B.T.R.</p>
+
+      <div class="gallery">
+        <div class="gallery__item" data-full="assets/img/events/sevlievo-hotalich-2025-08-01.jpg">
+          <img src="assets/img/events/sevlievo-hotalich-2025-08-01-thumb.jpg" alt="BACKBONE — Hotalich Rock Fest, Севлиево" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/sevlievo-hotalich-2025-08-02.jpg">
+          <img src="assets/img/events/sevlievo-hotalich-2025-08-02-thumb.jpg" alt="BACKBONE — Hotalich Rock Fest, Севлиево" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/sevlievo-hotalich-2025-08-03.jpg">
+          <img src="assets/img/events/sevlievo-hotalich-2025-08-03-thumb.jpg" alt="BACKBONE — Hotalich Rock Fest, Севлиево" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/sevlievo-hotalich-2025-08-04.jpg">
+          <img src="assets/img/events/sevlievo-hotalich-2025-08-04-thumb.jpg" alt="BACKBONE — Hotalich Rock Fest, Севлиево" loading="lazy">
+        </div>
+      </div>
+    </article>
+
+    <article class="event" data-reveal>
+      <div class="event__head">
+        <h2 class="event__title"><span data-lang-bg>Тутракан<span class="event__sub"> · July Morning</span></span><span data-lang-en>Tutrakan<span class="event__sub"> · July Morning</span></span></h2>
+        <div class="event__meta">
+          <span class="event__date">01.07.2025</span>
+          <span class="event__place"><span data-lang-bg>България</span><span data-lang-en>Bulgaria</span></span>
+        </div>
+      </div>
+      <div class="gallery">
+        <div class="gallery__item" data-full="assets/img/events/tutrakan-2025-07-01.jpg">
+          <img src="assets/img/events/tutrakan-2025-07-01-thumb.jpg" alt="BACKBONE — July Morning, Тутракан" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/tutrakan-2025-07-02.jpg">
+          <img src="assets/img/events/tutrakan-2025-07-02-thumb.jpg" alt="BACKBONE — July Morning, Тутракан" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/tutrakan-2025-07-03.jpg">
+          <img src="assets/img/events/tutrakan-2025-07-03-thumb.jpg" alt="BACKBONE — July Morning, Тутракан" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/tutrakan-2025-07-04.jpg">
+          <img src="assets/img/events/tutrakan-2025-07-04-thumb.jpg" alt="BACKBONE — July Morning, Тутракан" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/tutrakan-2025-07-05.jpg">
+          <img src="assets/img/events/tutrakan-2025-07-05-thumb.jpg" alt="July Morning на река Дунав, Тутракан" loading="lazy">
+        </div>
+      </div>
+    </article>
+
+    <article class="event" data-reveal>
+      <div class="event__head">
+        <h2 class="event__title"><span data-lang-bg>Белене<span class="event__sub"> · Фестивал на река Дунав</span></span><span data-lang-en>Belene<span class="event__sub"> · Danube River Festival</span></span></h2>
+        <div class="event__meta">
+          <span class="event__date">29.06.2025</span>
+          <span class="event__place"><span data-lang-bg>България</span><span data-lang-en>Bulgaria</span></span>
+        </div>
+      </div>
+      <p class="event__desc" data-lang-bg>На Фестивала на река Дунав в Белене имахме шанса да открием за Ахат — една от най-големите, ако не и най-голямата метъл група в България.</p>
+      <p class="event__desc" data-lang-en>At the Danube River Festival in Belene we got the chance to open for Ahat — one of the biggest, if not the biggest, metal bands in Bulgaria.</p>
+
+      <div class="gallery">
+        <div class="gallery__item" data-full="assets/img/events/belene-2025-06-00.jpg">
+          <img src="assets/img/events/belene-2025-06-00-thumb.jpg" alt="Фестивал на река Дунав, Белене — плакат / poster" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/belene-2025-06-01.jpg">
+          <img src="assets/img/events/belene-2025-06-01-thumb.jpg" alt="BACKBONE — Фестивал на река Дунав, Белене" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/belene-2025-06-02.jpg">
+          <img src="assets/img/events/belene-2025-06-02-thumb.jpg" alt="BACKBONE — Фестивал на река Дунав, Белене" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/belene-2025-06-03.jpg">
+          <img src="assets/img/events/belene-2025-06-03-thumb.jpg" alt="BACKBONE — Фестивал на река Дунав, Белене" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/belene-2025-06-04.jpg">
+          <img src="assets/img/events/belene-2025-06-04-thumb.jpg" alt="BACKBONE — Фестивал на река Дунав, Белене" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/belene-2025-06-05.jpg">
+          <img src="assets/img/events/belene-2025-06-05-thumb.jpg" alt="BACKBONE — Фестивал на река Дунав, Белене" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/belene-2025-06-06.jpg">
+          <img src="assets/img/events/belene-2025-06-06-thumb.jpg" alt="BACKBONE — Фестивал на река Дунав, Белене" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/belene-2025-06-07.jpg">
+          <img src="assets/img/events/belene-2025-06-07-thumb.jpg" alt="BACKBONE — Фестивал на река Дунав, Белене" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/belene-2025-06-08.jpg">
+          <img src="assets/img/events/belene-2025-06-08-thumb.jpg" alt="BACKBONE — Фестивал на река Дунав, Белене" loading="lazy">
+        </div>
+      </div>
+
+      <div class="event__video event__video--file">
+        <video controls preload="none" playsinline poster="assets/img/events/belene-2025-06-video-1-poster.jpg">
+          <source src="assets/video/belene-2025-06-video-1.mp4" type="video/mp4">
+          <span data-lang-bg>Браузърът ви не поддържа видео.</span>
+          <span data-lang-en>Your browser doesn't support video.</span>
+        </video>
+      </div>
+
+      <div class="event__video">
+        <iframe src="https://www.youtube.com/embed/uxcNM_4CfEs" title="BACKBONE — Белене" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <article class="event" data-reveal>
+      <div class="event__head">
+        <h2 class="event__title"><span data-lang-bg>Павликени<span class="event__sub"> · Празник на яйцето</span></span><span data-lang-en>Pavlikeni<span class="event__sub"> · Egg Festival</span></span></h2>
+        <div class="event__meta">
+          <span class="event__date">02.05.2025</span>
+          <span class="event__place"><span data-lang-bg>България</span><span data-lang-en>Bulgaria</span></span>
+        </div>
+      </div>
+      <p class="event__desc" data-lang-bg>На Празника на яйцето в Павликени имахме честта да загреем сцената за българската рок икона Конкурент.</p>
+      <p class="event__desc" data-lang-en>At the Egg Festival in Pavlikeni we had the honour of warming up the stage for the Bulgarian rock icons Konkurent.</p>
+
+      <div class="gallery">
+        <div class="gallery__item" data-full="assets/img/events/pavlikeni-2025-05-00.jpg">
+          <img src="assets/img/events/pavlikeni-2025-05-00-thumb.jpg" alt="Празник на яйцето, Павликени — плакат / poster" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/pavlikeni-2025-05-01.jpg">
+          <img src="assets/img/events/pavlikeni-2025-05-01-thumb.jpg" alt="BACKBONE — Празник на яйцето, Павликени" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/pavlikeni-2025-05-02.jpg">
+          <img src="assets/img/events/pavlikeni-2025-05-02-thumb.jpg" alt="BACKBONE с Конкурент — Празник на яйцето, Павликени" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/pavlikeni-2025-05-03.jpg">
+          <img src="assets/img/events/pavlikeni-2025-05-03-thumb.jpg" alt="Празник на яйцето — програма / lineup" loading="lazy">
+        </div>
+      </div>
+
+      <div class="event__video event__video--file">
+        <video controls preload="none" playsinline poster="assets/img/events/pavlikeni-2025-05-video-1-poster.jpg">
+          <source src="assets/video/pavlikeni-2025-05-video-1.mp4" type="video/mp4">
+          <span data-lang-bg>Браузърът ви не поддържа видео.</span>
+          <span data-lang-en>Your browser doesn't support video.</span>
+        </video>
+      </div>
+    </article>
+
+    <article class="event" data-reveal>
+      <div class="event__head">
+        <h2 class="event__title"><span data-lang-bg>Казанлък<span class="event__sub"> · Hope</span></span><span data-lang-en>Kazanlak<span class="event__sub"> · Hope</span></span></h2>
+        <div class="event__meta">
+          <span class="event__date">28.02.2025</span>
+          <span class="event__place"><span data-lang-bg>България</span><span data-lang-en>Bulgaria</span></span>
+        </div>
+      </div>
+      <div class="gallery">
+        <div class="gallery__item" data-full="assets/img/events/kazanlak-2025-02-00.jpg">
+          <img src="assets/img/events/kazanlak-2025-02-00-thumb.jpg" alt="Казанлък, Hope — плакат / poster" loading="lazy">
+        </div>
+      </div>
+
+      <div class="event__video event__video--file">
+        <video controls preload="none" playsinline poster="assets/img/events/kazanlak-2025-02-video-1-poster.jpg">
+          <source src="assets/video/kazanlak-2025-02-video-1.mp4" type="video/mp4">
+          <span data-lang-bg>Браузърът ви не поддържа видео.</span>
+          <span data-lang-en>Your browser doesn't support video.</span>
+        </video>
+      </div>
+    </article>
+
+    <article class="event" data-reveal>
+      <div class="event__head">
+        <h2 class="event__title"><span data-lang-bg>Велико Търново</span><span data-lang-en>Veliko Tarnovo</span></h2>
+        <div class="event__meta">
+          <span class="event__date">13.02.2025</span>
+          <span class="event__place"><span data-lang-bg>България</span><span data-lang-en>Bulgaria</span></span>
+        </div>
+      </div>
+      <div class="empty-note">
+        <span data-lang-bg>Снимки и видео скоро.</span>
+        <span data-lang-en>Photos and video coming soon.</span>
+      </div>
+    </article>
+
+    <article class="event" data-reveal>
+      <div class="event__head">
+        <h2 class="event__title"><span data-lang-bg>Севлиево<span class="event__sub"> · Клуб Кафе Театър</span></span><span data-lang-en>Sevlievo<span class="event__sub"> · Club Coffee Theatre</span></span></h2>
+        <div class="event__meta">
+          <span class="event__date">25.01.2025</span>
+          <span class="event__place"><span data-lang-bg>България</span><span data-lang-en>Bulgaria</span></span>
+        </div>
+      </div>
+      <div class="gallery">
+        <div class="gallery__item" data-full="assets/img/events/sevlievo-2025-01-00.jpg">
+          <img src="assets/img/events/sevlievo-2025-01-00-thumb.jpg" alt="Севлиево, Клуб Кафе Театър — плакат / poster" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/sevlievo-2025-01-01.jpg">
+          <img src="assets/img/events/sevlievo-2025-01-01-thumb.jpg" alt="BACKBONE — Севлиево, Клуб Кафе Театър" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/sevlievo-2025-01-02.jpg">
+          <img src="assets/img/events/sevlievo-2025-01-02-thumb.jpg" alt="BACKBONE — Севлиево, Клуб Кафе Театър" loading="lazy">
+        </div>
+      </div>
+    </article>
+
+    <article class="event" data-reveal>
+      <div class="event__head">
+        <h2 class="event__title"><span data-lang-bg>София<span class="event__sub"> · Lemmy Memorial</span></span><span data-lang-en>Sofia<span class="event__sub"> · Lemmy Memorial</span></span></h2>
+        <div class="event__meta">
+          <span class="event__date">29.12.2024</span>
+          <span class="event__place"><span data-lang-bg>България</span><span data-lang-en>Bulgaria</span></span>
+        </div>
+      </div>
+      <p class="event__desc" data-lang-bg>Lemmy Memorial в София — „Born to Lose, Lived to Win“. Вечер в памет на Lemmy, пред пълна зала.</p>
+      <p class="event__desc" data-lang-en>Lemmy Memorial in Sofia — "Born to Lose, Lived to Win." A night in memory of Lemmy, in front of a packed room.</p>
+
+      <div class="gallery">
+        <div class="gallery__item" data-full="assets/img/events/sofia-2024-12-00.jpg">
+          <img src="assets/img/events/sofia-2024-12-00-thumb.jpg" alt="Lemmy Memorial София — плакат / poster" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/sofia-2024-12-01.jpg">
+          <img src="assets/img/events/sofia-2024-12-01-thumb.jpg" alt="BACKBONE — Lemmy Memorial, София" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/sofia-2024-12-02.jpg">
+          <img src="assets/img/events/sofia-2024-12-02-thumb.jpg" alt="BACKBONE — Lemmy Memorial, София" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/sofia-2024-12-03.jpg">
+          <img src="assets/img/events/sofia-2024-12-03-thumb.jpg" alt="BACKBONE — Lemmy Memorial, София" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/sofia-2024-12-04.jpg">
+          <img src="assets/img/events/sofia-2024-12-04-thumb.jpg" alt="BACKBONE — Lemmy Memorial, София" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/sofia-2024-12-05.jpg">
+          <img src="assets/img/events/sofia-2024-12-05-thumb.jpg" alt="BACKBONE — Lemmy Memorial, София" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/sofia-2024-12-06.jpg">
+          <img src="assets/img/events/sofia-2024-12-06-thumb.jpg" alt="BACKBONE — Lemmy Memorial, София" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/sofia-2024-12-07.jpg">
+          <img src="assets/img/events/sofia-2024-12-07-thumb.jpg" alt="BACKBONE — Lemmy Memorial, София" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/sofia-2024-12-08.jpg">
+          <img src="assets/img/events/sofia-2024-12-08-thumb.jpg" alt="BACKBONE — Lemmy Memorial, София" loading="lazy">
+        </div>
+      </div>
+
+      <div class="videos">
+        <figure>
+          <video controls preload="none" playsinline poster="assets/img/events/sofia-2024-12-video-1-poster.jpg">
+            <source src="assets/video/sofia-2024-12-video-1.mp4" type="video/mp4">
+          </video>
+          <figcaption data-lang-bg>Killed by Death</figcaption>
+          <figcaption data-lang-en>Killed by Death</figcaption>
+        </figure>
+        <figure>
+          <video controls preload="none" playsinline poster="assets/img/events/sofia-2024-12-video-2-poster.jpg">
+            <source src="assets/video/sofia-2024-12-video-2.mp4" type="video/mp4">
+          </video>
+          <figcaption data-lang-bg>Публиката</figcaption>
+          <figcaption data-lang-en>The crowd</figcaption>
+        </figure>
+        <figure>
+          <video controls preload="none" playsinline poster="assets/img/events/sofia-2024-12-video-3-poster.jpg">
+            <source src="assets/video/sofia-2024-12-video-3.mp4" type="video/mp4">
+          </video>
+          <figcaption data-lang-bg>Ace of Spades</figcaption>
+          <figcaption data-lang-en>Ace of Spades</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="event" data-reveal>
+      <div class="event__head">
+        <h2 class="event__title"><span data-lang-bg>Плевен<span class="event__sub"> · Lemmy Memorial</span></span><span data-lang-en>Pleven<span class="event__sub"> · Lemmy Memorial</span></span></h2>
+        <div class="event__meta">
+          <span class="event__date">28.12.2024</span>
+          <span class="event__place"><span data-lang-bg>България</span><span data-lang-en>Bulgaria</span></span>
+        </div>
+      </div>
+      <p class="event__desc" data-lang-bg>В Плевен споделихме сцената с Николай Атанасов (Agent Steel, REZET, Prophecy, Day 40) — страхотен музикант, с когото разбихме последните две песни.</p>
+      <p class="event__desc" data-lang-en>In Pleven we shared the stage with Nikolay Atanasov (Agent Steel, REZET, Prophecy, Day 40) — a great musician we tore through the last two songs with.</p>
+
+      <div class="gallery">
+        <div class="gallery__item" data-full="assets/img/events/pleven-2024-12-00.jpg">
+          <img src="assets/img/events/pleven-2024-12-00-thumb.jpg" alt="Japara Rock — Lemmy Memorial, плакат / poster" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/pleven-2024-12-01.jpg">
+          <img src="assets/img/events/pleven-2024-12-01-thumb.jpg" alt="BACKBONE — Плевен, Lemmy Memorial" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/pleven-2024-12-02.jpg">
+          <img src="assets/img/events/pleven-2024-12-02-thumb.jpg" alt="BACKBONE — Плевен, Lemmy Memorial" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/pleven-2024-12-03.jpg">
+          <img src="assets/img/events/pleven-2024-12-03-thumb.jpg" alt="BACKBONE — Плевен, Lemmy Memorial" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/pleven-2024-12-04.jpg">
+          <img src="assets/img/events/pleven-2024-12-04-thumb.jpg" alt="BACKBONE — Плевен, Lemmy Memorial" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/pleven-2024-12-05.jpg">
+          <img src="assets/img/events/pleven-2024-12-05-thumb.jpg" alt="BACKBONE — Плевен, Lemmy Memorial" loading="lazy">
+        </div>
+      </div>
+    </article>
+
+    <article class="event" data-reveal>
+      <div class="event__head">
+        <h2 class="event__title"><span data-lang-bg>Кюстендил<span class="event__sub"> · Рок клуб Никита</span></span><span data-lang-en>Kyustendil<span class="event__sub"> · Nikita Rock Club</span></span></h2>
+        <div class="event__meta">
+          <span class="event__date">05.10.2024</span>
+          <span class="event__place"><span data-lang-bg>България</span><span data-lang-en>Bulgaria</span></span>
+        </div>
+      </div>
+      <p class="event__desc" data-lang-bg>В Кюстендил имахме честта да изсвирим една песен заедно с местните легенди Емилиян Арсов (ex-Metalwings) и Калин Крумов (Black Diamond).</p>
+      <p class="event__desc" data-lang-en>In Kyustendil we had the honour of playing a song together with local legends Emiliyan Arsov (ex-Metalwings) and Kalin Krumov (Black Diamond).</p>
+
+      <div class="gallery">
+        <div class="gallery__item" data-full="assets/img/events/kyustendil-2024-10-01.jpg">
+          <img src="assets/img/events/kyustendil-2024-10-01-thumb.jpg" alt="Кюстендил — плакат / poster" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/kyustendil-2024-10-02.jpg">
+          <img src="assets/img/events/kyustendil-2024-10-02-thumb.jpg" alt="BACKBONE — Кюстендил, Рок клуб Никита" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/kyustendil-2024-10-03.jpg">
+          <img src="assets/img/events/kyustendil-2024-10-03-thumb.jpg" alt="BACKBONE — Кюстендил, Рок клуб Никита" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/kyustendil-2024-10-04.jpg">
+          <img src="assets/img/events/kyustendil-2024-10-04-thumb.jpg" alt="BACKBONE — Кюстендил, Рок клуб Никита" loading="lazy">
+        </div>
+      </div>
+    </article>
+
+    <article class="event" data-reveal>
+      <div class="event__head">
+        <h2 class="event__title"><span data-lang-bg>Павликени<span class="event__sub"> · July Morning</span></span><span data-lang-en>Pavlikeni<span class="event__sub"> · July Morning</span></span></h2>
+        <div class="event__meta">
+          <span class="event__date">01.07.2024</span>
+          <span class="event__place"><span data-lang-bg>България</span><span data-lang-en>Bulgaria</span></span>
+        </div>
+      </div>
+      <p class="event__desc" data-lang-bg>Първият ни концерт — July Morning в Павликени, като трибют на Motörhead.</p>
+      <p class="event__desc" data-lang-en>Our very first show — July Morning in Pavlikeni, as a Motörhead tribute.</p>
+
+      <div class="gallery">
+        <div class="gallery__item" data-full="assets/img/events/pavlikeni-2024-07-01.jpg">
+          <img src="assets/img/events/pavlikeni-2024-07-01-thumb.jpg" alt="July Morning Pavlikeni — плакат / poster" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/pavlikeni-2024-07-02.jpg">
+          <img src="assets/img/events/pavlikeni-2024-07-02-thumb.jpg" alt="BACKBONE — July Morning Pavlikeni" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/pavlikeni-2024-07-03.jpg">
+          <img src="assets/img/events/pavlikeni-2024-07-03-thumb.jpg" alt="BACKBONE — July Morning Pavlikeni" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/pavlikeni-2024-07-04.jpg">
+          <img src="assets/img/events/pavlikeni-2024-07-04-thumb.jpg" alt="BACKBONE — July Morning Pavlikeni" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/pavlikeni-2024-07-05.jpg">
+          <img src="assets/img/events/pavlikeni-2024-07-05-thumb.jpg" alt="BACKBONE — July Morning Pavlikeni" loading="lazy">
+        </div>
+        <div class="gallery__item" data-full="assets/img/events/pavlikeni-2024-07-06.jpg">
+          <img src="assets/img/events/pavlikeni-2024-07-06-thumb.jpg" alt="BACKBONE — July Morning Pavlikeni" loading="lazy">
+        </div>
+      </div>
+
+      <div class="event__video event__video--file">
+        <video controls preload="metadata" playsinline poster="assets/img/events/pavlikeni-2024-07-video-poster.jpg">
+          <source src="assets/video/pavlikeni-2024-07-video.mp4" type="video/mp4">
+          <span data-lang-bg>Браузърът ви не поддържа видео.</span>
+          <span data-lang-en>Your browser doesn't support video.</span>
+        </video>
+      </div>
+    </article>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <img src="assets/img/logo-mark.png" alt="BACKBONE">
+  <p>© <span id="yr"></span> BACKBONE — <span data-lang-bg>Всички права запазени.</span><span data-lang-en>All rights reserved.</span></p>
+</footer>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
